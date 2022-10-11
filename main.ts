@@ -29,7 +29,30 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     basic.clearScreen()
 })
 radio.onReceivedString(function (receivedString) {
-    basic.showString(receivedString)
+    for (let zeichen of receivedString) {
+        if (zeichen == "-") {
+            basic.showLeds(`
+                . . . . .
+                . . . . .
+                # # # # #
+                . . . . .
+                . . . . .
+                `)
+            basic.pause(500)
+            basic.clearScreen()
+        }
+        if (zeichen == ".") {
+            basic.showLeds(`
+                . . . . .
+                . # # # .
+                . # # # .
+                . # # # .
+                . . . . .
+                `)
+            basic.pause(500)
+            basic.clearScreen()
+        }
+    }
 })
 basic.forever(function () {
     radio.setGroup(17)
