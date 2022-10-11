@@ -31,6 +31,7 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
 radio.onReceivedString(function (receivedString) {
     music.playMelody("C G E E C5 A E C5 ", 1111)
     music.playMelody("C G E E C5 A E C5 ", 1111)
+    music.playMelody("C G E E C5 A E C5 ", 1111)
     for (let zeichen of receivedString) {
         if (zeichen == "-") {
             basic.showLeds(`
