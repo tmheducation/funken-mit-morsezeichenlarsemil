@@ -1,4 +1,5 @@
 input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
+    radio.sendString(".")
     basic.showLeds(`
         . . . . .
         . # # # .
@@ -6,15 +7,17 @@ input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
         . # # # .
         . . . . .
         `)
-    basic.pause(1000)
+    basic.pause(500)
     basic.clearScreen()
 })
 input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
+    radio.sendString("_")
     basic.setLedColor(0x00ff00)
-    basic.pause(1000)
+    basic.pause(500)
     basic.turnRgbLedOff()
 })
 input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
+    radio.sendString("-")
     basic.showLeds(`
         . . . . .
         . . . . .
@@ -22,7 +25,7 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
         . . . . .
         . . . . .
         `)
-    basic.pause(1000)
+    basic.pause(500)
     basic.clearScreen()
 })
 radio.onReceivedString(function (receivedString) {
@@ -34,7 +37,7 @@ radio.onReceivedString(function (receivedString) {
             . . . . .
             . . . . .
             `)
-        basic.pause(1000)
+        basic.pause(500)
         basic.clearScreen()
     }
     if (receivedString == ".") {
@@ -45,12 +48,12 @@ radio.onReceivedString(function (receivedString) {
             . # # # .
             . . . . .
             `)
-        basic.pause(1000)
+        basic.pause(500)
         basic.clearScreen()
     }
     if (receivedString == "_") {
         basic.setLedColor(0x00ff00)
-        basic.pause(1000)
+        basic.pause(500)
         basic.turnRgbLedOff()
     }
 })
