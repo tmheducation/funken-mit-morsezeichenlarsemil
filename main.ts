@@ -1,5 +1,6 @@
+let wort = ""
 input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
-    radio.sendString(".")
+    wort = "" + wort + "."
     basic.showLeds(`
         . . . . .
         . # # # .
@@ -11,13 +12,10 @@ input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     basic.clearScreen()
 })
 input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
-    radio.sendString("_")
-    basic.setLedColor(0x00ff00)
-    basic.pause(500)
-    basic.turnRgbLedOff()
+    radio.sendString(wort)
 })
 input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
-    radio.sendString("-")
+    wort = "" + wort + "-"
     basic.showLeds(`
         . . . . .
         . . . . .
