@@ -1,0 +1,13 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="uyocBPB=AUYmcREEBOEd" x="0" y="0"><statement name="HANDLER"><block type="radio_set_group" id="U?oi#[)a6aNE~UPA08:O"><value name="ID"><shadow type="math_number_minmax" id="@DjH(YUoxG07U;l-vGUC"><mutation min="0" max="255" label="Id" precision="0"/><field name="SLIDER">17</field></shadow></value></block></statement></block><block type="device_forever" id="`Kz:_`p[KG5VIDs$nXkN" x="457" y="102"/><block type="device_button_selected_event" id="{*.BnBo(8,Hwnh~})v^u" x="33" y="224"><field name="NAME">Button.A</field><value name="eventType"><shadow type="control_button_event_click" id="j*))FT]t_E9Q`Lo-{x^e"/></value><statement name="HANDLER"><block type="device_show_leds" id="3.8BX#Ec62pDyUhJl{lh"><field name="LEDS">`
+        . . . . . 
+        . # # # . 
+        . # # # . 
+        . # # # . 
+        . . . . .
+        `</field></block></statement></block><block type="device_button_selected_event" id="e;NsP]IL7w)s/L3eFWl[" x="308" y="246"><field name="NAME">Button.B</field><value name="eventType"><shadow type="control_button_event_click" id="%I7jj7}76qgN15-cfYoM"/></value><statement name="HANDLER"><block type="device_show_leds" id="tq4K#xfdN/are!ctzx@p"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        # # # # # 
+        . . . . . 
+        . . . . .
+        `</field></block></statement></block><block type="device_button_selected_event" id="lcOqQK_qWV9{}=[rjsdU" x="574" y="306"><field name="NAME">Button.AB</field><value name="eventType"><shadow type="control_button_event_click" id="~#nanhf.+=({AA0eZTa,"/></value><statement name="HANDLER"><block type="device_set_led_color" id="Q4cKi5[8[3-Dl*Q-iUf_"><value name="color"><shadow type="colorNumberPicker" id=".sXVU06Jp,?hVJD+jLCP"><field name="value">0x00ff00</field></shadow></value><next><block type="device_pause" id="avYksZu/VU78,SssG,^)"><value name="pause"><shadow type="timePicker" id="#PsK,M-8G5!eG$283VyP"><field name="ms">2000</field></shadow></value><next><block type="device_turn_rgb_led_off" id="|v;xQfh8_OXsv~Sq!wu?"/></next></block></next></block></statement></block></xml>
