@@ -3,7 +3,8 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "radio": "*"
+        "radio": "*",
+        "SI1145": "github:calliope-edu/pxt-sunlightsensor-si1145#a7f26c1ef40c26cf57ef57881eb476b7e6287e39"
     },
     "files": [
         "main.blocks",
