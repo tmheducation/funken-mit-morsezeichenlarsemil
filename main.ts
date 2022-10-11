@@ -29,6 +29,8 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     basic.clearScreen()
 })
 radio.onReceivedString(function (receivedString) {
+    music.playMelody("C G E E C5 A E C5 ", 1111)
+    music.playMelody("C G E E C5 A E C5 ", 1111)
     for (let zeichen of receivedString) {
         if (zeichen == "-") {
             basic.showLeds(`
@@ -40,6 +42,7 @@ radio.onReceivedString(function (receivedString) {
                 `)
             basic.pause(500)
             basic.clearScreen()
+            basic.pause(500)
         }
         if (zeichen == ".") {
             basic.showLeds(`
@@ -51,6 +54,7 @@ radio.onReceivedString(function (receivedString) {
                 `)
             basic.pause(500)
             basic.clearScreen()
+            basic.pause(500)
         }
     }
 })
