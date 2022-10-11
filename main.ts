@@ -13,6 +13,8 @@ input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
 })
 input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
     radio.sendString(wort)
+    basic.pause(500)
+    wort = ""
 })
 input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     wort = "" + wort + "-"
