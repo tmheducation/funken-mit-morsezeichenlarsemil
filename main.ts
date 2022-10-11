@@ -34,8 +34,10 @@ radio.onReceivedString(function (receivedString) {
             . . . . .
             . . . . .
             `)
+        basic.pause(1000)
+        basic.clearScreen()
     }
-    if ("" == ".") {
+    if (receivedString == ".") {
         basic.showLeds(`
             . . . . .
             . # # # .
@@ -43,9 +45,13 @@ radio.onReceivedString(function (receivedString) {
             . # # # .
             . . . . .
             `)
+        basic.pause(1000)
+        basic.clearScreen()
     }
     if (receivedString == "_") {
         basic.setLedColor(0x00ff00)
+        basic.pause(1000)
+        basic.turnRgbLedOff()
     }
 })
 radio.setGroup(17)
