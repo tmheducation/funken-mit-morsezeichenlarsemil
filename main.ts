@@ -25,7 +25,6 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     basic.pause(1000)
     basic.clearScreen()
 })
-radio.setGroup(17)
 basic.forever(function () {
-	
+    radio.setGroup(17)
 })
