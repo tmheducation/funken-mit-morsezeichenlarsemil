@@ -70,11 +70,16 @@ radio.onReceivedString(function (receivedString) {
     }
 })
 let wort = ""
-while (false) {
+let merkegruppe = 0
+while (!(input.pinIsPressed(TouchPin.P3))) {
     if (input.pinIsPressed(TouchPin.P1)) {
         radio.setGroup(100 - 1)
+        merkegruppe += merkegruppe - 1
+        basic.showNumber(merkegruppe)
     }
     if (input.pinIsPressed(TouchPin.P2)) {
         radio.setGroup(100 + 1)
+        merkegruppe += merkegruppe + 1
+        basic.showNumber(merkegruppe)
     }
 }
