@@ -70,7 +70,7 @@ radio.onReceivedString(function (receivedString) {
     }
 })
 let wort = ""
-for (let index = 0; index < 556754575566475460; index++) {
+while (false) {
     if (input.pinIsPressed(TouchPin.P1)) {
         radio.setGroup(100 - 1)
     }
